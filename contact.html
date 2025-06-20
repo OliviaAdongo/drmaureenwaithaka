@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Dr. Waithaka</title>
+    <link rel="icon" type="image/png" href="/images/logo/2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+          <img
+            src="/images/logo/logo3.png"
+            alt="Doctor Waithaka Logo"
+            class="logo-icon"
+          />
+          <div>
+            <span class="logo-text-doctor">Doctor</span>
+            <span class="logo-text-name">Waithaka</span>
+          </div>
+        </a>
+
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li>
+            <a href="creative-work.html" class="nav-link">My Creative Work</a>
+          </li>
+          <li><a href="faq.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+          </li>
+        </ul>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          ☰
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <ul class="navbar-nav mobile-nav">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li>
+            <a href="creative-work.html" class="nav-link">My Creative Work</a>
+          </li>
+          <li><a href="faq.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header Section -->
+      <section class="contact-header">
+        <div class="container">
+                        <span class="page-title__small-type">Get In Touch</span>
+          <!-- <h1 class="page-title">Get In Touch</h1> -->
+          <p class="page-subtitle">
+            Ready to start your next project or need a consultation? I'd love to
+            hear from you. Let's discuss how we can work together to bring your
+            vision to life.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Content -->
+      <section class="contact-content">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <h3>Let's Connect</h3>
+
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                  <h4>Email Address</h4>
+                  <p>
+                    <a href="mailto:contact@drwaithaka.com"
+                      >contact@drwaithaka.com</a
+                    >
+                  </p>
+                  <p>For general inquiries and consultations</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                  <h4>Phone Number</h4>
+                  <p><a href="tel:+254700000000">+254 700 000 000</a></p>
+                  <p>Available during business hours</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                  <h4>Location</h4>
+                  <p>Nairobi, Kenya</p>
+                  <p>Remote consultations available worldwide</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">⚡</div>
+                <div class="contact-details">
+                  <h4>Response Time</h4>
+                  <p>24-48 hours</p>
+                  <p>Emergency consultations: Same day</p>
+                </div>
+              </div>
+
+              <div class="office-hours">
+                <h4>📅 Office Hours</h4>
+                <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM EAT</p>
+                <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM EAT</p>
+                <p><strong>Sunday:</strong> Closed</p>
+                <p style="margin-top: 10px; font-style: italic">
+                  Emergency consultations available 24/7
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <h3>Send a Message</h3>
+              <form>
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+
+                <div class="form-group">
+                  <label for="service">Service Interest</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option value="digital-pathology">
+                      Digital Pathology Consultation
+                    </option>
+                    <option value="medical-consultation">
+                      Medical Consultation
+                    </option>
+                    <option value="content-creation">Content Creation</option>
+                    <option value="educational-videos">
+                      Educational Videos
+                    </option>
+                    <option value="documentary">Documentary Production</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell me about your project or consultation needs..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer-centered">
+      <div class="container">
+        <div class="footer-centered-logo">
+          <a href="index.html" class="footer-navbar-logo">
+            <img
+              src="/images/logo/logo3.png"
+              alt="Doctor Waithaka Logo"
+              class="footer-logo-icon"
+            />
+            <!-- <div>
+                    <span class="footer-logo-text-doctor">Doctor</span>
+                    <span class="footer-logo-text-name">Waithaka</span>
+                </div> -->
+          </a>
+          <h2>Dr. Maureen Waithaka</h2>
+          <p>Digital Pathology Specialist</p>
+        </div>
+
+        <nav class="footer-centered-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="creative-work.html">My Creative Work</a>
+          <a href="faq.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-centered-social">
+          <a
+            href="https://www.linkedin.com/in/yourprofile"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@DrWairimuWaithaka"
+            target="_blank"
+            title="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@path_daddy"
+            target="_blank"
+            title="TikTok"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+
+        <div class="footer-centered-bottom">
+          <p>
+            &copy; 2025 Dr. Maureen Waithaka. | Designed by
+            <a href="htts://workingwave.com" target="_blank">Working Wave</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

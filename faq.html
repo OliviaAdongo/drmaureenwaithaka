@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Dr. Waithaka</title>
+    <link rel="icon" type="image/png" href="/images/logo/2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Serif+Display&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+          <img
+            src="/images/logo/logo3.png"
+            alt="Doctor Waithaka Logo"
+            class="logo-icon"
+          />
+          <div>
+            <span class="logo-text-doctor">Doctor</span>
+            <span class="logo-text-name">Waithaka</span>
+          </div>
+        </a>
+
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li>
+            <a href="creative-work.html" class="nav-link">My Creative Work</a>
+          </li>
+          <li><a href="faq.html" class="nav-link active">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+          </li>
+        </ul>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          ☰
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <ul class="navbar-nav mobile-nav">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li>
+            <a href="creative-work.html" class="nav-link">My Creative Work</a>
+          </li>
+          <li><a href="faq.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<section class="contact-header">
+        <div class="container">
+                        <span class="page-title__small-type">Digital Pathology FAQ</span>
+
+          <!-- <h1 class="page-title">Digital Pathology FAQs</h1> -->
+          <p class="page-subtitle">
+             Find answers to the most common questions about digital pathology
+            technology and implementation
+          </p>
+        </div>
+      </section>
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="faq-wrapper">
+        <div class="faq-header">
+          <h1> Frequently Asked Questions</h1>
+          <p>
+           
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="search-box">
+            <div class="search-icon">🔍</div>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search FAQ questions..."
+              id="searchInput"
+            />
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is digital pathology?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Digital pathology is the practice of digitising glass slides
+                (tissue samples) using scanners to convert the glass slides into
+                high resolution digital images. This allows pathologists to
+                view, analyze, and share the images on a computer instead of a
+                microscope.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does a digital pathology scanner work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The scanner takes high resolution images of entire glass slides,
+                stitching together thousands of tiny snapshots to create a whole
+                slide image (WSI) that can be viewed digitally.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How much storage does a single digital slide need?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                A high resolution whole slide image (WSI) can range from 500 MB
+                to 5+ GB, depending on scan quality and tissue size.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is digital pathology approved for primary diagnosis?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                In many regions, certain systems are approved for primary
+                diagnosis. Regulations vary from region to region.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Will pathologists become obsolete, replaced by algorithms and
+                blinking lights?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No, it is a tool to enhance efficiency, not replace human
+                expertise. AI assists, but pathologists make the final call.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >What are the benefits of digital pathology over traditional
+                pathology?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>There are a number of benefits including:</p>
+              <ul>
+                <li>
+                  <strong>Facilitating remote access</strong> - Pathologists can
+                  review slides from anywhere (with a tablet/computer and
+                  internet access), unconfined by having to be present in
+                  offices or beat traffic to travel distances between the
+                  institutions they serve
+                </li>
+                <li>
+                  <strong>Enabling collaboration</strong> - Digital images can
+                  easily and securely be shared allowing for multiple experts to
+                  view, discuss and collaboratively make diagnoses on the same
+                  slide simultaneously
+                </li>
+                <li>
+                  <strong>AI integration</strong> - Artificial intelligence
+                  algorithms can be developed and integrated to assist in
+                  diagnosis
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What are some challenges facing digital pathology?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                First is <strong>cost</strong>, scanners, software and digital
+                storage are expensive.
+              </p>
+              <p>
+                <strong>Standardisation</strong> also poses a significant
+                challenge, there are currently different scanners and formats
+                which can cause compatibility issues.
+              </p>
+              <p>
+                <strong>Workflow integration</strong> is another challenge.
+                There may be resistance to change from legacy systems as well as
+                the need for pathologists, hospitals and labs to undergo
+                training in order to adopt digital workflow systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Is digital pathology only for big, fancy hospitals with
+                unlimited budgets?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The beauty of digital pathology lies in its scalability and
+                increasing accessibility. As technology advances and costs
+                decrease, we envision a future where even smaller clinics and
+                remote healthcare providers can leverage these tools. Imagine a
+                patient in a rural community benefiting from a specialist's
+                opinion from thousands of miles away, all thanks to digital
+                pathology. It has the potential to democratise access to expert
+                diagnostics.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >What's the difference between digital pathology and
+                computational pathology?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Digital pathology involves digitising glass histology slides
+                while computational pathology involves using AI and software to
+                analyze these digitised slides.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >What's the most exciting thing on the horizon for digital
+                pathology that most people don't know about?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The integration of histologic and molecular (also called -omics)
+                data. When a tissue sample is taken from a patient, various
+                tests and investigations are done. Imagine being able to use
+                technology, which can analyze and process vast amounts of data,
+                to combine the visual insights from digital pathology with
+                genomic, proteomic, and metabolomic data from the same tissue
+                sample. This creates a holistic, multi-dimensional view of
+                disease, allowing for incredibly precise diagnoses, personalised
+                treatment plans, and even the development of entirely new
+                therapies.
+              </p>
+            </div>
+          </div>
+
+          <div class="no-results">
+            <h3>No matching questions found</h3>
+            <p>
+              Try adjusting your search terms or browse all questions above.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-centered">
+      <div class="container">
+        <div class="footer-centered-logo">
+          <a href="index.html" class="footer-navbar-logo">
+            <img
+              src="/images/logo/logo3.png"
+              alt="Doctor Waithaka Logo"
+              class="footer-logo-icon"
+            />
+            <!-- <div>
+                    <span class="footer-logo-text-doctor">Doctor</span>
+                    <span class="footer-logo-text-name">Waithaka</span>
+                </div> -->
+          </a>
+          <h2>Dr. Maureen Waithaka</h2>
+          <p>Digital Pathology Specialist</p>
+        </div>
+
+        <nav class="footer-centered-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="creative-work.html">My Creative Work</a>
+          <a href="faq.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-centered-social">
+          <a
+            href="https://www.linkedin.com/in/yourprofile"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@DrWairimuWaithaka"
+            target="_blank"
+            title="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@path_daddy"
+            target="_blank"
+            title="TikTok"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+
+        <div class="footer-centered-bottom">
+          <p>
+            &copy; 2025 Dr. Maureen Waithaka. | Designed by
+            <a href="htts://workingwave.com" target="_blank">Working Wave</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
