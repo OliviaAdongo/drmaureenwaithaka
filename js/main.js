@@ -32,10 +32,10 @@ function initializePageLoader() {
     const loaderText = document.querySelector('.loader-text p');
     
     const loadingSteps = [
-        { progress: 20, text: 'Initializing medical interface...' },
-        { progress: 40, text: 'Loading diagnostic tools...' },
-        { progress: 60, text: 'Preparing pathology content...' },
-        { progress: 80, text: 'Finalizing user experience...' },
+        { progress: 20, text: 'Initializing...' },
+        { progress: 40, text: 'Loading ...' },
+        { progress: 60, text: 'Preparing content...' },
+        { progress: 80, text: 'Almost Ready...' },
         { progress: 100, text: 'Ready to explore!' }
     ];
 
